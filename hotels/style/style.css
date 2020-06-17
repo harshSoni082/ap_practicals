@@ -1,0 +1,263 @@
+:root
+{
+    --border-color: rgb(210, 210, 210);
+    --shadow-color: rgba(143, 143, 143, 0.5);
+    --cool-blue: rgb(79, 177, 222);
+    --cool-bluish-green: rgb(87, 193, 199);
+    --cool-green: rgb(88, 191, 178);
+    --placeholder: rgb(174, 174, 174);
+    --input-color: rgb(84, 94, 103);
+    --register-shadow: rgb(237, 240, 243);
+    --reg-input-border: rgb(152, 160, 169);
+    --less-cool-green: rgb(26,179,148);
+    --less-cool-red: rgb(237,85,101);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    background-color: rgb(239, 250, 252);
+}
+
+a, a:active, a:visited, a:hover
+{
+    text-decoration: none;
+    border: none;
+}
+
+select
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+header
+{
+    background-color: transparent;
+}
+
+.upper-nav-bar
+{
+    padding: 1% 2% 0.9% 4%;
+    background-color: black;
+    border: none;
+}
+
+.upper-nav-header
+{
+    color: white;
+    background-color: transparent;
+    font-size: 3vw;
+    font-family: 'Comfortaa';
+    border: none;
+}
+
+.upper-nav-header:hover
+{
+    cursor: pointer;
+}
+
+.nav-bar
+{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    padding: 0% 2% 0 4%;
+    font-family: 'Maven Pro';
+    font-size: 1.5vw;
+    color: var(--shadow-color);
+    background-color: black;
+    border: none;
+    top: 0%;
+    width: 80%;
+    right: 0;
+}
+
+.nav-link
+{
+    transition: 0.25s ease;
+    color: white;
+    border-bottom: 3px solid transparent;
+    padding: 2%;
+    background-color: transparent;
+}
+
+.nav-link:nth-child(1)
+{
+    margin-left: 50%;
+}
+
+.nav-link:hover
+{
+    transition: 0.25s ease;
+    cursor: pointer;
+    border-bottom: 3px solid #E83C92;
+}
+
+.nav-signup
+{
+    transition: 0.25s ease;
+    padding: 2%;
+    margin-left: 8%;
+    color: white;
+    border: none;
+}
+
+.nav-signup:hover
+{
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.search-form-container
+{
+    display: flex;
+    width: 100%;
+    height: 608px;
+    justify-content: center;
+    background-image: url("../resources/background2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+    border: none;
+}
+
+.title
+{
+    color: white;
+    font-family: Roboto;
+    font-size: 8vw;
+    position: absolute;
+    width: 80%;
+    font-weight: bold;
+    top: 45%;
+}
+
+.search-container
+{
+    transition: 0.25s ease;
+    width: 80%;
+    box-sizing: border-box;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    padding: 0px;
+    border: none;
+}
+
+.search-form
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24%;
+    border: none;
+}
+
+.search-box
+{
+    box-sizing: border-box;
+    transition: 0.25s ease;
+    width: 100%;
+    border: none;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    font-size: 1.2vw;
+    font-family: 'Maven Pro';
+    margin: 0px;
+    border: none;
+    color: var(--input-color);
+}
+
+.search-box:focus
+{
+    transition: 0.25s ease;
+    outline: none;
+}
+
+.search-btn
+{
+    transition: 0.25s ease;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    font-family: 'Maven Pro';
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    font-size: 1.2vw;
+    padding: 1.6%;
+    height: 100%;
+    background-color: rgb(200, 1, 96);
+    color: white;
+}
+
+.search-btn:hover
+{
+    transition: 0.25s ease;
+    background-color: rgb(180, 1, 79);
+    cursor: pointer;
+}
+
+.row
+{
+    transition: 0.25s ease;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+}
+
+
+.row:hover
+{
+    transition: 0.25s ease;
+    color: var(--cool-blue);
+}
+
+.col
+{
+    box-sizing: border-box;
+    flex: 25%;
+    text-align: center;
+    border-right: 1px solid var(--border-color);
+}
+
+.col:hover
+{
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.inbox
+{
+    padding: 8%;
+    border: none;
+    font-size: 1.2vw;
+}
+
+.inbox:focus
+{
+    outline: none;
+}
+
+.search-form .row .col:nth-child(4)
+{
+    border: none;  
+}
+
+.gallery .row .col
+{
+    width: 50%;
+}

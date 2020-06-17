@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Quicksand:wght@300&family=Ubuntu:wght@300&display=swap&family=Comfortaa:wght@500&display=swap&family=Roboto:wght@300&display=swap&family=Bellota+Text:wght@300&display=swap&family=Poiret+One&display=swap" rel="stylesheet">
+        <script src="script/script.js"></script>
+    </head>
+
+    <body>
+        <div class="model" id="cred-model">
+            <div class="cred-container">
+                <div class="login-slider">
+                    <h3 class="signup-link">Sign Up</h3>
+                </div>
+                <div class="register-container">
+                    <div class="signup-container">
+                        <h3 id="signup-header">Create your account</h3>
+                        <div class="signup-form-conainer">
+                            <form class="signup-form" action="backend/php/register.php" method="POST" target="_blank">
+                                <input class="fname" type="text" name="fname" placeholder="First Name" required/>
+                                <input class="lname" type="text" name="lname" placeholder="Last Name" required/>
+                                <input class="email" type="email" name="email" placeholder="Email Address" required/>
+                                <input class="pass" type="password" name="pass" placeholder="Password" required/>
+                                <input class="repass" type="password" name="repass" placeholder="Confirm Password" required/>
+                                <input type="submit" class="signup-btn" value="Sign Up">
+                                <input type="reset" class="reset-btn" value="Reset">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

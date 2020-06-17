@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration
+        </title>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Quicksand:wght@300&family=Ubuntu:wght@300&display=swap&family=Comfortaa:wght@500&display=swap&family=Roboto:wght@300&display=swap&family=Bellota+Text:wght@300&display=swap&family=Poiret+One&display=swap" rel="stylesheet">
+        <script src="script/script.js"></script>
+    </head>
+
+    <body>
+        <div class="center-container">
+            <div class="register-container">
+                <div class="signup-container">
+                    <h3 id="signup-header">Registration Form</h3>
+                    <div class="signup-form-conainer">
+                        <form class="signup-form" action="backend/php/registration.php" method="POST" target="_blank">
+                                <input class="fname" type="text" name="fname" placeholder="First Name" required/>
+                                <input class="lname" type="text" name="lname" placeholder="Last Name" required/>
+                                <input class="fathername" type="text" name="fathernme" placeholder="Fathers Name" required/>
+                                <input class="bday" type="date" name="bday" placeholder="Birthday" required/> 
+                                <input class="gender" id="male" type="radio" name="gender" value="Male">
+                                <label for="male">Male</label>
+                                <input class="gender" id="female" type="radio" name="gender" value="Female" >
+                                <label for="female">Female</label><br>
+                                <input class="email" type="email" name="email" placeholder="Email" required/>
+                                <input class="tel" type="tel" name="tel" placeholder="Mobile No" pattern="\d\d\d\d\d\d\d\d\d\d" required/>
+                                <input class="add" type="text" name="address" placeholder="Address" required/>
+                                <input class="pincode" type="text" name="pincode" placeholder="Pincode (000000)" pattern="\d\d\d\d\d\d" required/>
+                                <select class="state" name="state">
+                                </select>
+                                <input type="submit" class="signup-btn" value="Submit">
+                            </p>
+                        </form>
+                    </div>
+                </div>   
+            </div> 
+        </div>
+    </body>
+</html>

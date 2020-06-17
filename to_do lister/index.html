@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            To-Dos
+        </title>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Quicksand:wght@300&family=Ubuntu:wght@300&display=swap&family=Comfortaa:wght@500&display=swap&family=Roboto:wght@300&display=swap&family=Bellota+Text:wght@300&display=swap&family=Poiret+One&display=swap" rel="stylesheet">
+        <script src="script/script.js"></script>
+    </head>
+
+    <body>
+        <!-----------------------------------Header---------------------------------->
+        <header>
+            <div class="upper-nav-bar">
+                <a class="upper-nav-header" href="#">ToDos</a>
+                <nav class="nav-bar">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Lists</a>
+                    <a class="nav-link" href="#">Cart</a>
+                    <a class="nav-signup" href="#">Sign In</a>
+                </nav>
+            </div>
+        </header>
+        <!--------------------------------------------------------------------------->
+
+        <!-----------------------------------SignUp---------------------------------->
+        <div class="model" id="cred-model">
+            <span class="close" id="cred-close">&times;</span>
+            <div class="cred-container">
+                <div class="login-slider">
+                    <h3 class="login-link">Sign In</h3>
+                    <h3 class="signup-link">Sign Up</h3>
+                </div>
+                <div class="register-container">
+                    <div class="login-container">
+                        <div class="login-form-conainer">
+                            <h3 id="login-header">Sign in to your account</h3>
+                            <form class="login-form" action="backend/php/signin.php" method="POST" target="_blank">
+                                <input class="email" type="email" name="email" placeholder="Email Address" required/><br/>
+                                <input class="pass" type="password" name="pass" placeholder="Password" required/><br/>
+                                <input type="submit" class="login-btn" value="Sign In">
+                                <input type="reset" class="reset-btn" value="Reset">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="signup-container">
+                        <h3 id="signup-header">Create your account</h3>
+                        <div class="signup-form-conainer">
+                            <form class="signup-form" action="backend/php/register.php" method="POST" target="_blank">
+                                <input class="fname" type="text" name="fname" placeholder="First Name" required/>
+                                <input class="lname" type="text" name="lname" placeholder="Last Name" required/>
+                                <input class="email" type="email" name="email" placeholder="Email Address" required/>
+                                <input class="pass" type="password" name="pass" placeholder="Password" required/>
+                                <input class="repass" type="password" name="repass" placeholder="Confirm Password" required/>
+                                <input type="submit" class="signup-btn" value="Sign Up">
+                                <input type="reset" class="reset-btn" value="Reset">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------->
+        <div class="instructions">
+            <h1 class="head">Create To-Do List</h1>
+            <h3 class="steps">
+                Type into the input box > 
+                Click Add button >
+                To delete a list element, click at x beside<br>
+            </h3>
+        </div>
+        <!----------------------------Create--------------------------->
+        <div class="add-form-container">
+            <div class="add-container">
+                <form class="add-form">
+                    <input class="add-box" type="text" placeholder="New To-Do">
+                    <button class="add-btn">Add</button>
+                </form>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------->
+        <div class="to-dos">
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,214 @@
+:root
+{
+    --border-color: rgb(210, 210, 210);
+    --shadow-color: rgba(143, 143, 143, 0.5);
+    --cool-blue: rgb(79, 177, 222);
+    --cool-bluish-green: rgb(87, 193, 199);
+    --cool-green: rgb(88, 191, 178);
+    --placeholder: rgb(174, 174, 174);
+    --input-color: rgb(84, 94, 103);
+    --register-shadow: rgb(237, 240, 243);
+    --reg-input-border: rgb(152, 160, 169);
+    --less-cool-green: rgb(26,179,148);
+    --less-cool-red: rgb(237,85,101);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    background-image: linear-gradient(145deg, rgb(79, 179, 222), rgb(88, 191, 178));
+    /* background-color: rgb(239, 250, 252); */
+    /* background-repeat: repeat; */
+
+}
+
+a, a:active, a:visited, a:hover
+{
+    text-decoration: none;
+}
+
+select
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.model
+{
+    transition: 0.25s ease;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#cred-model
+{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cred-container
+{
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    margin-top: 6%;
+    height: 80%;
+    width: 50%;
+    max-height: 100%;
+    max-width: 80%;
+    padding: 0%;
+    background-color: white;
+    border: 1px solid var(--register-shadow);
+    box-shadow: 1px 1px 5px var(--register-shadow);
+}
+
+.login-slider
+{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.signup-link
+{
+    box-sizing: border-box;
+    transition: 0.25s ease;
+    font-size: 1vw;
+    margin: auto;
+    font-family: 'Maven Pro';
+    padding: 3% 0 3% 0;
+    width: 100%;
+    color: rgb(150, 168, 185);
+    border-bottom: 1px solid rgb(237, 240, 243);
+    background-color: rgb(250, 251, 252);
+}
+
+.login-link
+{
+    border-right: 1px solid rgb(237, 240, 243);
+    border-bottom: 0;
+    background-color: white;
+}
+
+.register-container
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    margin: auto;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.register-container input
+{
+    box-sizing: border-box;
+    padding: 3% 4% 3% 2%;
+    width: 80%;
+    border: 1px solid var(--reg-input-border);
+    font-size: 1vw;
+    margin-bottom: 4%;
+    font-family: Roboto;
+    color: #666666;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    box-shadow: 1px 1px 5px var(--register-shadow);
+}
+
+.register-container input:focus
+{
+    outline: none;
+}
+
+.register-container input[type="submit"], .register-container input[type="reset"]
+{
+    box-sizing: border-box;
+    width: 40%;
+    border: 0;
+    padding: 3% 2% 3% 2%;
+    font-size: 1vw;
+    font-family: Roboto;
+    color: white;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    box-shadow: 1px 1px 12px var(--shadow-color);
+}
+
+#signup-header
+{
+    font-size: 2.4vw;
+    margin-bottom: 6%;
+    font-family: 'Poiret One';
+    color: #666666;
+}
+
+.signup-container
+{   
+    transition: 0.25s ease;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%; 
+}
+
+.signup-container input
+{
+    width: 39%;
+}
+
+.signup-container input:nth-child(3)
+{
+    width: 80%;
+}
+
+.signup-container input:nth-child(1), .signup-container input:nth-child(4)
+{
+    margin-right: 1%;
+}
+
+
+.signup-btn
+{
+    transition: 0.25s ease;
+    background-color: rgb(44,208,123);
+    color: white;
+}
+
+.signup-btn:hover
+{
+    cursor: pointer;
+    transition: 0.25s ease;
+    background-color: rgb(45, 182, 111);
+}
+
+.reset-btn
+{
+    transition: 0.25s ease;
+    background-color: var(--less-cool-red);
+    color: white;
+}
+
+.reset-btn:hover
+{
+    cursor: pointer;
+    transition: 0.25s ease;
+    background-color: rgb(213,76,90);
+}
+
